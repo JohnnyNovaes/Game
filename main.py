@@ -31,7 +31,6 @@ def run_game():
 
         # Check any events from mouse to keyboard
         gf.check_events(ai_settings, screen, ship, bullets)
-
         # Moves the ship
         ship.update()
         bullets.update()
