@@ -30,12 +30,12 @@ def run_game():
     while True:
 
         # Check any events from mouse to keyboard
-        gf.check_events(ai_settings, screen, ship, bullets)
+        gf.check_events(ai_settings, background, ship, bullets)
         # Moves the ship
         ship.update()
         bullets.update()
         # Update screen with all images files
-        gf.update_screen(ai_settings, screen, background, ship, bullets)
+        gf.update_screen(ai_settings, background, ship, bullets)
 
 
 run_game()
